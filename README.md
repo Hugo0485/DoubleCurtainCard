@@ -16,8 +16,8 @@ A Lovelace card to control two curtains side-by-side with clean sliders, mirrore
 
 ## Installation
 
-### Manual
-1. Copy `mijn-gordijnen-card.js` into your Home Assistant `www/` directory:
+1. Download the latest version of [mijn-gordijnen-card.js](mijn-gordijnen-card.js)  
+   and place it into your `config/www/` folder in Home Assistant.
 
 2. Add the card as a resource in your dashboard settings:
 - Go to **Settings → Dashboards → Resources**  
