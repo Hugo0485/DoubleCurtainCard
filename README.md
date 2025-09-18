@@ -2,7 +2,7 @@
 
 A Lovelace card to control two curtains side-by-side with clean sliders, mirrored arrow buttons, and an optional “door” button to set the right curtain to a specific position.
 
-![Mijn Gordijnen Card Screenshot](docs/screenshot.png)
+![Mijn Gordijnen Card Screenshot](screenshot.png)
 
 ## Features
 
