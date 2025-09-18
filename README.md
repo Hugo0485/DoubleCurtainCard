@@ -1,12 +1,21 @@
-# DoubleCurtainCard
+# Mijn Gordijnen Card
 
-"Mijn Gordijnen Card" is a modern card for Home Assistant that controls two separate curtains (left and right) in one compact view. It features flat sliders that visually “close” from the outside toward the center, mirrored arrow buttons per curtain, global Open all / Close all actions, and a optionale configurable Door button that sets the right curtain to a specific percentage.
+A sleek Lovelace card to control two curtains side-by-side with Mushroom-style sliders, mirrored arrows, and a configurable “door” position.
 
-Feature bullets
+![Screenshot](docs/screenshot.png)
 
-- Two independent cover entities (left & right) in one card
-- Curtain fill animation: color moves from outside → inside when closing
-- Mirrored arrows per curtain (←/→) with correct open/close semantics
-- Global controls: Open all, Close all
-- optionale Door button (right curtain only) with configurable % (door_position)
-- Works with any HA cover supporting set_cover_position (e.g. Z-Wave Forest rails)
+## Features
+
+- Two independent **cover** entities (left & right) in one card  
+- **Mushroom-style** custom sliders (flat, no native `<input type="range">`)  
+- **Curtain fill animation**: track fills from the outside toward the center when closing  
+- **Mirrored arrows** per curtain (←/→) with correct open/close behavior  
+- **Global controls**: Open all, Close all  
+- **Door button** (right curtain only) with configurable percentage (`door_position`)  
+- Works with any Home Assistant `cover` entity that supports `set_cover_position`  
+- Optimized for modern dashboards, compact and professional look  
+
+## Installation
+
+### Manual
+1. Copy `mijn-gordijnen-card.js` into your Home Assistant `www/` directory:
