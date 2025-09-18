@@ -1,4 +1,4 @@
-# Double curtain card
+# Double curtain card Home Assistant
 
 A Lovelace card to control two curtains side-by-side with clean sliders, mirrored arrow buttons, and an optional “door” button to set the right curtain to a specific position.
 
