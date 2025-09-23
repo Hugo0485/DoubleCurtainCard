@@ -3,9 +3,9 @@
 A dual-cover Lovelace card with **sliders**, **door presets**, **per-side invert**, and clean **% display**.  
 Built for Home Assistant dashboards (frontend plugin).
 
-![Mijn Gordijnen Card Screenshot](screenshot.png)
+![Double curtain](doublecurtain.gif)
 
-*(Tip: add a short GIF showing dragging + door buttons for a better store page.)*
+
 
 ---
 
