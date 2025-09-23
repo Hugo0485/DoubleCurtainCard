@@ -44,7 +44,7 @@ Built for Home Assistant dashboards (frontend plugin).
 3. Add a dashboard resource (Settings → Dashboards → Resources):
    ```yaml
    url: /local/double-curtain-card.js?v=1.3.2
-   type: JavaScript
+   type: module
    ```
 
   
