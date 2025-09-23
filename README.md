@@ -1,39 +1,53 @@
-# Double curtain card Home Assistant
+# Double Curtain Card
 
-A Lovelace card to control two curtains side-by-side with clean sliders, mirrored arrow buttons, and an optional “door” button to set the right curtain to a specific position.
+A dual-cover Lovelace card with **sliders**, **door presets**, **per-side invert**, and clean **% display**.  
+Built for Home Assistant dashboards (frontend plugin).
 
 ![Mijn Gordijnen Card Screenshot](screenshot.png)
 
-## Features
+*(Tip: add a short GIF showing dragging + door buttons for a better store page.)*
 
-- Two independent **cover** entities (left & right) in one card  
-- Sliders that visually close from the outside toward the center  
-- Mirrored arrow buttons per curtain (←/→) with correct open/close behavior  
-- Global controls: **Open all**, **Close all**  
-- Optional **Door button** (right curtain only) with configurable percentage (`door_position`)  
-- Works with any Home Assistant `cover` entity that supports `set_cover_position`  
-- Compact and modern look  
+---
+
+## Features
+- Smooth **dragging** with **rounded %**; the service call is sent **on release**
+- **Door buttons** (optional per side; target position in %)
+- **Invert** per side (swap open/close logic for that cover)
+- **Blink/animation** is correct even when inverted
+- **GUI editor** (ha-form) – entity pickers, toggles, and number inputs
+- Always **two columns** (left/right) side-by-side
+
+---
+
+## Requirements
+- Home Assistant **2023.12** or newer
+- Two `cover.*` entities exposing `current_position` (0–100)
+
+---
 
 ## Installation
 
-1. Download the latest version of [mijn-gordijnen-card.js](mijn-gordijnen-card.js)  
-   and place it into your `config/www/` folder in Home Assistant.
+### Option A — HACS (Custom repository)
+1. In Home Assistant open **HACS → ⋯ → Custom repositories**  
+2. Add your repository URL and select type **Dashboard / Plugin**  
+3. Open the repo in HACS and click **Install**  
+4. The resource will be added automatically as:
+   ```yaml
+   url: /hacsfiles/double-curtain-card/double-curtain-card.js
+   type: module
+   ```
+   
 
-2. Add the card as a resource in your dashboard settings:
-- Go to **Settings → Dashboards → Resources**  
-- Add a new resource:  
-  - URL: `/local/mijn-gordijnen-card.js`  
-  - Type: **JavaScript Module**
-3. Restart Home Assistant or reload your browser cache (`Ctrl+Shift+R`).
+   ### B) Manual
+1. Download dist/double-curtain-card.js (from a release or the repo)
+2. Copy it to /config/www/
+3. Add a dashboard resource (Settings → Dashboards → Resources):
+   ```yaml
+   url: /local/double-curtain-card.js?v=1.3.2
+   type: JavaScript
+   ```
 
-## Usage
+  
 
-Add the following to your Lovelace configuration:
 
-```yaml
-type: custom:mijn-gordijnen-card
-name: Living Room Curtains
-left_entity: cover.leftcovers
-right_entity: cover.rightcover
-door_position: 30   # optional, sets right curtain to 30% when "Door" button is pressed
 
