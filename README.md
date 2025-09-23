@@ -4,9 +4,6 @@ A dual-cover Lovelace card with **sliders**, **door presets**, **per-side invert
 Built for Home Assistant dashboards (frontend plugin).
 
 ![Double curtain](doublecurtain.gif)
-
-
-
 ---
 
 ## Features
@@ -17,6 +14,7 @@ Built for Home Assistant dashboards (frontend plugin).
 - **GUI editor** (ha-form) – entity pickers, toggles, and number inputs
 - Always **two columns** (left/right) side-by-side
 
+![example](example.png)
 ---
 
 ## Requirements
