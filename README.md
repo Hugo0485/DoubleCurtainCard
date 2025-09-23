@@ -29,7 +29,7 @@ Built for Home Assistant dashboards (frontend plugin).
 
 ### Option A — HACS (Custom repository)
 1. In Home Assistant open **HACS → ⋯ → Custom repositories**  
-2. Add your repository URL and select type **Dashboard / Plugin**  
+2. Add https://github.com/Hugo0485 and select type **Dashboard / Plugin**  
 3. Open the repo in HACS and click **Install**  
 4. The resource will be added automatically as:
    ```yaml
