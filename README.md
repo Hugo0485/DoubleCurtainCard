@@ -11,14 +11,15 @@
 **Double Curtain Card** is a compact Lovelace card to control two curtain covers (left & right) from a single UI.
 
 **Highlights**
-- Two sliders with live position (0–100)
-- Percentage **centered below** each slider
-- **Door buttons** (optional per side; target position in %)
-- Global **Open All / Close All** buttons
-- **Invert** per side (swap open/close logic for that cover)
-- **Blink/animation** is correct even when inverted
-- **GUI editor** (ha-form) – entity pickers, toggles, and number inputs
-- Always **two columns** (left/right) side-by-side
+
+- Dual sliders with live position (0–100)
+- Percentage shown below each slider
+- Optional preset per side (hidden when left empty)
+- Open All / Close All buttons
+- Per-side invert
+- Optional blink during movement (toggle)
+- Sends service on release
+- Simple GUI editor (entity pickers, toggles, numbers)
 
 ---
 
@@ -68,6 +69,7 @@
    - *(Optional)* **Left door position** / **Right door position** (0–100).  
      If left empty, the corresponding **Door** button is hidden.  
    - *(Optional)* **Invert left** / **Invert right**
+   - *(Optional)* **Blink while moving**`(toggles the blink animation during movement)`  
 4. Click **Save**.
 
 > The GUI editor mirrors the YAML options below. You can switch to YAML at any time.
@@ -85,6 +87,7 @@ left_door_position: 10 # If there's no value buttons will disappear
 right_door_position: 10 # If there's no value buttons will disappear 
 invert_left: false
 invert_right: false
+blink_motion: true
 ````
 
 ## Configuration
@@ -100,5 +103,6 @@ invert_right: false
 | `right_door_position` | number  | –        | Position (0–100) for the right **Door** button; hidden if not provided |
 | `invert_left`         | boolean | `false`  | Invert open/close logic for the left slider                            |
 | `invert_right`        | boolean | `false`  | Invert open/close logic for the right slider                           |
+| `blink_motion`        | boolean | `true`   | Turn on/off blink functionality                                        |
 
 
