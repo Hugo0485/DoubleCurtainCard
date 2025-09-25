@@ -1,9 +1,9 @@
 # Double Curtain Card
 
+[![Buy me a beer](https://img.shields.io/badge/Support-Buy%20me%20a%20beer-fdd734?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/hugo0485)
 [![Last commit](https://img.shields.io/github/last-commit/Hugo0485/DoubleCurtainCard)](#)
 ![Downloads](https://img.shields.io/github/downloads/Hugo0485/DoubleCurtainCard/total)
 [![Version](https://img.shields.io/github/v/release/Hugo0485/DoubleCurtainCard)](#)
-[![Open in HACS](https://img.shields.io/badge/Open%20in-HACS-41BDF5?logo=homeassistant&logoColor=white)](https://my.home-assistant.io/redirect/hacs_repository/?owner=Hugo0485&repository=DoubleCurtainCard&category=plugin)
 [![Home Assistant Community](https://img.shields.io/badge/Home%20Assistant-Community%20Forum-319fee?logo=home-assistant)](https://community.home-assistant.io/t/lovelace-double-curtain-card/)
 
 ![Double curtain](doublecurtain.gif)
