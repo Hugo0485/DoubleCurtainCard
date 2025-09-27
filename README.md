@@ -66,8 +66,9 @@
    - **Left entity** → your left curtain `cover.*`  
    - **Right entity** → your right curtain `cover.*`  
    - **Left label** / **Right label**  
-   - *(Optional)* **Left door position** / **Right door position** (0–100).  
-     If left empty, the corresponding **Door** button is hidden.  
+   - *(Optional)* **Left fixed position** / **Right fixed position** (0–100).  
+     If left empty, the corresponding button is hidden.  
+   - *(Optional)* **Choose your own MDI for fixed positions** ).  
    - *(Optional)* **Invert left** / **Invert right**
    - *(Optional)* **Blink while moving**`(toggles the blink animation during movement)`  
 4. Click **Save**.
@@ -83,8 +84,10 @@ left_label: left curtain
 right_label: right curtain
 
 # Optional behavior flags
-left_door_position: 10 # If there's no value buttons will disappear 
-right_door_position: 10 # If there's no value buttons will disappear 
+left_fixed_position: 10 # If there's no value buttons will disappear 
+right_fixed_position: 10 # If there's no value buttons will disappear 
+left_fixed_icon: mdi:crosshairs-gps # choose your own mdi
+right_fixed_icon: mdi:crosshairs-gps # choose your own mdi
 invert_left: false
 invert_right: false
 blink_motion: true
@@ -94,15 +97,15 @@ blink_motion: true
 
 | Name                  | Type    | Default  | Description                                                            |
 | --------------------- | ------- | -------- | ---------------------------------------------------------------------- |
-| `left_entity`         | string  | required | Cover entity for the **left** curtain                                  |
-| `right_entity`        | string  | required | Cover entity for the **right** curtain                                 |
-| `name`                | string  | –        | Card title shown at the top                                            |
-| `left_label`          | string  | –        | Optional label shown for the left side                                 |
-| `right_label`         | string  | –        | Optional label shown for the right side                                |
-| `left_door_position`  | number  | –        | Position (0–100) for the left **Door** button; hidden if not provided  |
-| `right_door_position` | number  | –        | Position (0–100) for the right **Door** button; hidden if not provided |
-| `invert_left`         | boolean | `false`  | Invert open/close logic for the left slider                            |
+| `name`                | string  | –        | Card title shown at the top     
+| `left_label`          | string  | –        | Optional label shown for the left side       
+| `left_entity`         | string  | required | Cover entity for the **left** curtain
+| `left_fixed_position:`  | number  | –        | Position (0–100) for the left **Fixed poition** button; hidden if not provided  |
+| `left_fixed_icon:` | MDI  | –        | Choose **MDI** icon for the left fixed position button |  
+| `invert_left`         | boolean | `false`  | Invert open/close logic for the left slider  
+| `right_label`         | string  | –        | Optional label shown for the right side                                  |
+| `right_entity`        | string  | required | Cover entity for the **right** curtain                                 |                                      
+| `right_fixed_position:` | number  | –        | Position (0–100) for the right **Fixed poition** button; hidden if not provided |
+| `right_fixed_icon:` | MDI  | –        | Choose **MDI** icon for the right fixed position button |                          |
 | `invert_right`        | boolean | `false`  | Invert open/close logic for the right slider                           |
 | `blink_motion`        | boolean | `true`   | Turn on/off blink functionality                                        |
-
-
